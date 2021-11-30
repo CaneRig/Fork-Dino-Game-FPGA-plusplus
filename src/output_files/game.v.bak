@@ -1,0 +1,12 @@
+module game
+(input clk, up, output reg jump);
+
+
+
+always @(negedge clk)
+begin
+		
+		if ()
+end
+
+endmodule

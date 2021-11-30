@@ -1,0 +1,22 @@
+module random(input clk, output [8:0] random_bits);
+
+reg [32:0] random_reg = 1234;
+reg [8:0] random_reg_complete = 0;
+//assign random_bits = random_reg;
+
+integer i = 0;
+
+always @(negedge clk)
+begin
+	random_reg = random_reg * random_reg;
+	
+	for (i = 8; i < 8+8; i = i+1) begin
+		random_reg_complete [i - 8] = random_reg [i];
+	end
+	
+	if (random_reg_complete > 0 && random_reg_complete < 80)
+	begin
+		random_bits = random_reg_complete;
+	end
+end
+endmodule
