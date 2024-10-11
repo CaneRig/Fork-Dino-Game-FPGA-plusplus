@@ -1,6 +1,0 @@
-
-State Machine - |vga|bit_stream:inst2|dino_sprite_choice
-Name dino_sprite_choice.000 dino_sprite_choice.010 dino_sprite_choice.001 
-dino_sprite_choice.000 0 0 0 
-dino_sprite_choice.001 1 0 1 
-dino_sprite_choice.010 1 1 0 

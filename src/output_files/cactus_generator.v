@@ -1,6 +1,6 @@
 module cactus_generator 
 (input clk, game_over, input [8:0] random_input,
-output [11:0] cactus0, cactus1, cactus2, cactus3, output reg cactus_sync);
+output [11:0] cactus0, cactus1, cactus2, cactus3, output reg cactus_sync, input rst);
 
 reg [11:0] cactuses [0:4];
 
@@ -16,8 +16,16 @@ integer count1 = 0;
 integer count2 = 0;
 integer i = 0;
 
-always @ (negedge clk)
+always @ (posedge clk or negedge rst)
 begin
+	if (!rst) begin 
+		begining <= 1;
+		count1 <= 0;
+		count2 <= 0;
+		i <= 0;
+		spd <= 200000;
+	end else begin
+
 	cactus_sync = 0;
 	count1 = count1 + 1;
 	count2 = count2 + 1;
@@ -57,6 +65,7 @@ begin
 			end
 		end
 		cactus_sync = 1;
+	end
 	end
 	// --
 end

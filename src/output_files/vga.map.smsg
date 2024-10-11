@@ -1,1 +1,3 @@
-Warning (10268): Verilog HDL information at keyboard.v(10): always construct contains both blocking and non-blocking assignments File: /home/blinikar/Desktop/fpga project/vga/keyboard.v Line: 10
+Warning (10268): Verilog HDL information at game.sv(34): always construct contains both blocking and non-blocking assignments File: /home/polinanime/github/Dino-Game-FPGA/src/output_files/game.sv Line: 34
+Warning (10268): Verilog HDL information at keyboard.v(10): always construct contains both blocking and non-blocking assignments File: /home/polinanime/github/Dino-Game-FPGA/src/keyboard.v Line: 10
+Warning (10268): Verilog HDL information at cactus_generator.v(19): always construct contains both blocking and non-blocking assignments File: /home/polinanime/github/Dino-Game-FPGA/src/output_files/cactus_generator.v Line: 19

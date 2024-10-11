@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -74,6 +74,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
+		(pt 0 144)
+		(input)
+		(text "rst" (rect 0 0 10 12)(font "Arial" ))
+		(text "rst" (rect 21 139 31 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
 		(pt 224 32)
 		(output)
 		(text "jump_chn[8..0]" (rect 0 0 59 12)(font "Arial" ))
@@ -86,6 +93,20 @@ https://fpgasoftware.intel.com/eula.
 		(text "game_over" (rect 0 0 47 12)(font "Arial" ))
 		(text "game_over" (rect 156 43 203 55)(font "Arial" ))
 		(line (pt 224 48)(pt 208 48)(line_width 1))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "abcdefgh[7..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "abcdefgh[7..0]" (rect 147 59 203 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64)(line_width 3))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "digit[3..0]" (rect 0 0 34 12)(font "Arial" ))
+		(text "digit[3..0]" (rect 169 75 203 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 208 160)(line_width 1))
