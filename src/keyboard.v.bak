@@ -1,7 +1,0 @@
-module keyboard
-(input clk, data, output led0, led1);
-
-assign led0 = clk;
-assign led1 = data;
-
-endmodule

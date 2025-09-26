@@ -1,6 +1,6 @@
 Flow report for vga
-Sun Oct  6 17:27:06 2024
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Fri Sep 26 18:49:11 2025
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct  6 17:27:06 2024       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Flow Status                        ; Successful - Fri Sep 26 18:49:11 2025       ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; vga                                         ;
 ; Top-level Entity Name              ; vga                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,519 / 6,272 ( 24 % )                      ;
-;     Total combinational functions  ; 1,510 / 6,272 ( 24 % )                      ;
-;     Dedicated logic registers      ; 346 / 6,272 ( 6 % )                         ;
-; Total registers                    ; 346                                         ;
+; Total logic elements               ; 1,583 / 6,272 ( 25 % )                      ;
+;     Total combinational functions  ; 1,576 / 6,272 ( 25 % )                      ;
+;     Dedicated logic registers      ; 394 / 6,272 ( 6 % )                         ;
+; Total registers                    ; 394                                         ;
 ; Total pins                         ; 23 / 92 ( 25 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/06/2024 17:26:32 ;
+; Start date & time ; 09/26/2025 18:41:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 35281968873644.172822479215131         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 1095657316083.175890130004172          ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -107,26 +107,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 436 MB              ; 00:00:31                           ;
-; Fitter               ; 00:00:09     ; 1.1                     ; 965 MB              ; 00:00:13                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 349 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 461 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
-; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:48                           ;
+; Analysis & Synthesis ; 00:06:44     ; 1.0                     ; 5097 MB             ; 00:07:03                           ;
+; Fitter               ; 00:00:25     ; 1.1                     ; 5682 MB             ; 00:00:29                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4746 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.2                     ; 4841 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4673 MB             ; 00:00:01                           ;
+; Total                ; 00:07:18     ; --                      ; --                  ; 00:07:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+----------------------+------------------+----------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
-+----------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis ; polinanime-HP    ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
-; Fitter               ; polinanime-HP    ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
-; Assembler            ; polinanime-HP    ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
-; Timing Analyzer      ; polinanime-HP    ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
-; EDA Netlist Writer   ; polinanime-HP    ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
-+----------------------+------------------+----------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; BooB             ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; BooB             ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; BooB             ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; BooB             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; BooB             ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
