@@ -239,7 +239,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1400 728 1464 744))
+	(annotation_block (location)(rect 1328 696 1392 712))
 )
 (symbol
 	(rect 64 200 200 280)
@@ -776,7 +776,7 @@ https://fpgasoftware.intel.com/eula.
 	(annotation_block (parameter)(rect 416 376 608 416))
 )
 (symbol
-	(rect 48 656 304 736)
+	(rect 48 616 304 696)
 	(text "speed_controller" (rect 5 0 114 15)(font "Arial" ))
 	(text "inst4" (rect 8 64 39 79)(font "Arial" ))
 	(port
@@ -797,12 +797,17 @@ https://fpgasoftware.intel.com/eula.
 		(pt 256 32)
 		(output)
 		(text "speed[(11+FRAC_PART_SIZE)..0]" (rect 0 0 219 15)(font "Arial" ))
-		(text "speed[(11+FRAC_PART_SIZE)..0]" (rect 50 27 269 42)(font "Arial" ))
+		(text "speed[(11+FRAC_PART_SIZE)..0]" (rect 50 27 235 42)(font "Arial" ))
 		(line (pt 256 32)(pt 240 32)(line_width 3))
 	)
 	(parameter
 		"FRAC_PART_SIZE"
 		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MAXIMUM_SPEED"
+		"46"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -813,7 +818,7 @@ https://fpgasoftware.intel.com/eula.
 	(drawing
 		(rectangle (rect 16 16 240 64))
 	)
-	(annotation_block (parameter)(rect -208 600 -32 672))
+	(annotation_block (parameter)(rect -208 560 -32 632))
 )
 (connector
 	(pt 832 720)
@@ -911,16 +916,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 752 600)
 	(pt 752 656)
-)
-(connector
-	(pt 1064 672)
-	(pt 1144 672)
-	(bus)
-)
-(connector
-	(pt 1064 688)
-	(pt 1144 688)
-	(bus)
 )
 (connector
 	(pt 632 416)
@@ -1118,32 +1113,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 120 400)
 )
 (connector
-	(pt 312 688)
-	(pt 304 688)
-	(bus)
-)
-(connector
-	(pt 312 512)
-	(pt 312 688)
-	(bus)
-)
-(connector
-	(pt 40 752)
-	(pt 40 704)
-)
-(connector
-	(pt 40 704)
-	(pt 48 704)
-)
-(connector
-	(pt 24 752)
-	(pt 40 752)
-)
-(connector
-	(pt 40 752)
-	(pt 360 752)
-)
-(connector
 	(pt 1080 592)
 	(pt 376 592)
 )
@@ -1189,14 +1158,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 104 544)
 )
 (connector
-	(pt 48 688)
-	(pt 24 688)
-)
-(connector
-	(pt 24 688)
-	(pt 24 464)
-)
-(connector
 	(pt 24 464)
 	(pt 88 464)
 )
@@ -1219,6 +1180,50 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 1000 352)
 	(pt 1088 352)
+)
+(connector
+	(pt 40 752)
+	(pt 40 664)
+)
+(connector
+	(pt 40 664)
+	(pt 48 664)
+)
+(connector
+	(pt 24 648)
+	(pt 48 648)
+)
+(connector
+	(pt 24 464)
+	(pt 24 648)
+)
+(connector
+	(pt 312 648)
+	(pt 304 648)
+	(bus)
+)
+(connector
+	(pt 24 752)
+	(pt 40 752)
+)
+(connector
+	(pt 40 752)
+	(pt 360 752)
+)
+(connector
+	(pt 312 512)
+	(pt 312 648)
+	(bus)
+)
+(connector
+	(pt 1064 672)
+	(pt 1144 672)
+	(bus)
+)
+(connector
+	(pt 1144 688)
+	(pt 1064 688)
+	(bus)
 )
 (junction (pt 1080 536))
 (junction (pt 784 464))

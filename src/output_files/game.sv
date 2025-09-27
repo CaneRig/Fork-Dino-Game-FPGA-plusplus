@@ -36,7 +36,9 @@ begin
 
 	if (!rst)
 	begin
-		// start <= 0;
+		//start <= 0; ///////////////
+		//init <= 0;
+		
 		game_over <= 0;
 		jump_chn_reg <= 0;
 		timeout <= 0;

@@ -51,8 +51,8 @@ https://fpgasoftware.intel.com/eula.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"SPEED_INCREACE_TIME"
-		"1000"
+		"MAXIMUM_SPEED"
+		"46"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

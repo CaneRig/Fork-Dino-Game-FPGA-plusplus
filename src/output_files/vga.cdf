@@ -1,10 +1,10 @@
-/* Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition */
+/* Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("/home/polinanime/github/Dino-Game-FPGA/src/output_files/") File("vga.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/") File("vga.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

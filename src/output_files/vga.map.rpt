@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga
-Fri Sep 26 18:48:25 2025
+Sat Sep 27 17:07:33 2025
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -56,15 +56,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 26 18:48:25 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 27 17:07:33 2025       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; vga                                         ;
 ; Top-level Entity Name              ; vga                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,593                                       ;
-;     Total combinational functions  ; 1,574                                       ;
-;     Dedicated logic registers      ; 394                                         ;
-; Total registers                    ; 394                                         ;
+; Total logic elements               ; 1,581                                       ;
+;     Total combinational functions  ; 1,562                                       ;
+;     Dedicated logic registers      ; 393                                         ;
+; Total registers                    ; 393                                         ;
 ; Total pins                         ; 23                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -215,20 +215,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                       ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,593                                                                       ;
+; Estimated Total logic elements              ; 1,581                                                                       ;
 ;                                             ;                                                                             ;
-; Total combinational functions               ; 1574                                                                        ;
+; Total combinational functions               ; 1562                                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                                             ;
-;     -- 4 input functions                    ; 792                                                                         ;
-;     -- 3 input functions                    ; 289                                                                         ;
-;     -- <=2 input functions                  ; 493                                                                         ;
+;     -- 4 input functions                    ; 782                                                                         ;
+;     -- 3 input functions                    ; 288                                                                         ;
+;     -- <=2 input functions                  ; 492                                                                         ;
 ;                                             ;                                                                             ;
 ; Logic elements by mode                      ;                                                                             ;
-;     -- normal mode                          ; 1081                                                                        ;
+;     -- normal mode                          ; 1069                                                                        ;
 ;     -- arithmetic mode                      ; 493                                                                         ;
 ;                                             ;                                                                             ;
-; Total registers                             ; 394                                                                         ;
-;     -- Dedicated logic registers            ; 394                                                                         ;
+; Total registers                             ; 393                                                                         ;
+;     -- Dedicated logic registers            ; 393                                                                         ;
 ;     -- I/O registers                        ; 0                                                                           ;
 ;                                             ;                                                                             ;
 ; I/O pins                                    ; 23                                                                          ;
@@ -239,8 +239,8 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                           ;
 ;                                             ;                                                                             ;
 ; Maximum fan-out node                        ; pll:inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 388                                                                         ;
-; Total fan-out                               ; 6279                                                                        ;
+; Maximum fan-out                             ; 387                                                                         ;
+; Total fan-out                               ; 6231                                                                        ;
 ; Average fan-out                             ; 3.11                                                                        ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
 
@@ -250,7 +250,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name      ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+------------------+--------------+
-; |vga                                 ; 1574 (0)            ; 394 (0)                   ; 0           ; 1            ; 1       ; 0         ; 23   ; 0            ; |vga                                                            ; vga              ; work         ;
+; |vga                                 ; 1562 (0)            ; 393 (0)                   ; 0           ; 1            ; 1       ; 0         ; 23   ; 0            ; |vga                                                            ; vga              ; work         ;
 ;    |bit_stream:inst2|                ; 870 (870)           ; 41 (41)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|bit_stream:inst2                                           ; bit_stream       ; work         ;
 ;    |cactus_generator:inst24|         ; 238 (238)           ; 107 (107)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|cactus_generator:inst24                                    ; cactus_generator ; work         ;
 ;    |game:inst27|                     ; 308 (219)           ; 133 (75)                  ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |vga|game:inst27                                                ; game             ; work         ;
@@ -266,7 +266,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |altpll:altpll_component|      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|pll:inst|altpll:altpll_component                           ; altpll           ; work         ;
 ;          |pll_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|pll:inst|altpll:altpll_component|pll_altpll:auto_generated ; pll_altpll       ; work         ;
 ;    |sound:inst6|                     ; 42 (42)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|sound:inst6                                                ; sound            ; work         ;
-;    |speed_controller:inst4|          ; 57 (57)             ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|speed_controller:inst4                                     ; speed_controller ; work         ;
+;    |speed_controller:inst4|          ; 45 (45)             ; 45 (45)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|speed_controller:inst4                                     ; speed_controller ; work         ;
 ;    |sync:inst1|                      ; 39 (39)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|sync:inst1                                                 ; sync             ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -346,7 +346,8 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; game:inst27|jump_chn_reg[0]             ; Merged with game:inst27|jump_chn_reg[1]                    ;
 ; game:inst27|jump_coefficient[0]         ; Merged with game:inst27|jump_chn_reg[1]                    ;
 ; cactus_generator:inst24|count2[0]       ; Merged with game:inst27|score:score|count:Inst1_count|q[0] ;
-; Total Number of Removed Registers = 42  ;                                                            ;
+; speed_controller:inst4|timer[31]        ; Lost fanout                                                ;
+; Total Number of Removed Registers = 43  ;                                                            ;
 +-----------------------------------------+------------------------------------------------------------+
 
 
@@ -355,12 +356,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 394   ;
-; Number of registers using Synchronous Clear  ; 33    ;
+; Total registers                              ; 393   ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 269   ;
+; Number of registers using Asynchronous Clear ; 268   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 161   ;
+; Number of registers using Clock Enable       ; 162   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -391,9 +392,9 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |vga|cactus_generator:inst24|cactuses[0][6] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |vga|keyboard:inst3|count[0]                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |vga|game:inst27|timeout[22]                ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |vga|cactus_generator:inst24|cactuses[0][9] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |vga|keyboard:inst3|count[4]                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |vga|game:inst27|timeout[28]                ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |vga|game:inst27|score:score|Mux3           ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |vga|bit_stream:inst2|dino_sprite_choice    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
@@ -785,12 +786,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: speed_controller:inst4 ;
-+---------------------+-------+---------------------------------------+
-; Parameter Name      ; Value ; Type                                  ;
-+---------------------+-------+---------------------------------------+
-; FRAC_PART_SIZE      ; 2     ; Signed Integer                        ;
-; SPEED_INCREACE_TIME ; 1000  ; Signed Integer                        ;
-+---------------------+-------+---------------------------------------+
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; FRAC_PART_SIZE ; 2     ; Signed Integer                             ;
+; MAXIMUM_SPEED  ; 46    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -881,30 +882,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 23                          ;
-; cycloneiii_ff         ; 394                         ;
-;     CLR               ; 164                         ;
-;     CLR SCLR          ; 32                          ;
+; cycloneiii_ff         ; 393                         ;
+;     CLR               ; 163                         ;
+;     CLR SCLR          ; 31                          ;
 ;     ENA               ; 88                          ;
-;     ENA CLR           ; 73                          ;
+;     ENA CLR           ; 74                          ;
 ;     SCLR              ; 1                           ;
 ;     plain             ; 36                          ;
-; cycloneiii_lcell_comb ; 1582                        ;
+; cycloneiii_lcell_comb ; 1570                        ;
 ;     arith             ; 493                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 354                         ;
-;         3 data inputs ; 138                         ;
-;     normal            ; 1089                        ;
+;         2 data inputs ; 355                         ;
+;         3 data inputs ; 137                         ;
+;     normal            ; 1077                        ;
 ;         0 data inputs ; 8                           ;
 ;         1 data inputs ; 36                          ;
-;         2 data inputs ; 102                         ;
+;         2 data inputs ; 100                         ;
 ;         3 data inputs ; 151                         ;
-;         4 data inputs ; 792                         ;
+;         4 data inputs ; 782                         ;
 ; cycloneiii_mac_mult   ; 1                           ;
 ; cycloneiii_mac_out    ; 1                           ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 21.30                       ;
-; Average LUT depth     ; 9.85                        ;
+; Average LUT depth     ; 9.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -913,7 +914,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:14     ;
+; Top            ; 00:00:15     ;
 +----------------+--------------+
 
 
@@ -923,7 +924,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Fri Sep 26 18:41:40 2025
+    Info: Processing started: Sat Sep 27 17:07:01 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga -c vga
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 6 processors
@@ -932,8 +933,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file speed_c
     Info (12023): Found entity 1: speed_controller File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/speed_controller.sv Line: 1
 Info (12021): Found 3 design units, including 3 entities, in source file output_files/game.sv
     Info (12023): Found entity 1: game File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 1
-    Info (12023): Found entity 2: score File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 148
-    Info (12023): Found entity 3: count File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 293
+    Info (12023): Found entity 2: score File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 150
+    Info (12023): Found entity 3: count File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 295
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
     Info (12023): Found entity 1: pll File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/pll.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file sync.v
@@ -2220,9 +2221,9 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "cactus_sprite" into its bus
 Info (12128): Elaborating entity "game" for hierarchy "game:inst27"
 Warning (10036): Verilog HDL or VHDL warning at game.sv(16): object "j" assigned a value but never read File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 16
-Warning (10230): Verilog HDL assignment warning at game.sv(83): truncated value with size 32 to match size of target (9) File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 83
+Warning (10230): Verilog HDL assignment warning at game.sv(85): truncated value with size 32 to match size of target (9) File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 85
 Info (12128): Elaborating entity "score" for hierarchy "game:inst27|score:score" File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 30
-Info (12128): Elaborating entity "count" for hierarchy "game:inst27|score:score|count:Inst1_count" File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 204
+Info (12128): Elaborating entity "count" for hierarchy "game:inst27|score:score|count:Inst1_count" File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 206
 Info (12128): Elaborating entity "keyboard" for hierarchy "keyboard:inst3"
 Warning (10230): Verilog HDL assignment warning at keyboard.v(45): truncated value with size 32 to match size of target (5) File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/keyboard.v Line: 45
 Info (12128): Elaborating entity "cactus_generator" for hierarchy "cactus_generator:inst24"
@@ -2237,13 +2238,14 @@ Info (10041): Inferred latch for "spd[1]" at cactus_generator.v(31) File: C:/Use
 Info (10041): Inferred latch for "spd[2]" at cactus_generator.v(31) File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/cactus_generator.v Line: 31
 Info (10041): Inferred latch for "spd[3]" at cactus_generator.v(31) File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/cactus_generator.v Line: 31
 Info (12128): Elaborating entity "speed_controller" for hierarchy "speed_controller:inst4"
+Warning (10230): Verilog HDL assignment warning at speed_controller.sv(18): truncated value with size 32 to match size of target (14) File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/speed_controller.sv Line: 18
 Info (12128): Elaborating entity "random" for hierarchy "random:inst22"
 Warning (10036): Verilog HDL or VHDL warning at random.v(5): object "prev_random_reg" assigned a value but never read File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/random.v Line: 5
 Info (12128): Elaborating entity "sound" for hierarchy "sound:inst6"
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "game:inst27|Mult1" File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 83
-Info (12130): Elaborated megafunction instantiation "game:inst27|lpm_mult:Mult1" File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 83
-Info (12133): Instantiated megafunction "game:inst27|lpm_mult:Mult1" with the following parameter: File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 83
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "game:inst27|Mult1" File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 85
+Info (12130): Elaborated megafunction instantiation "game:inst27|lpm_mult:Mult1" File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 85
+Info (12133): Instantiated megafunction "game:inst27|lpm_mult:Mult1" with the following parameter: File: C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/game.sv Line: 85
     Info (12134): Parameter "LPM_WIDTHA" = "9"
     Info (12134): Parameter "LPM_WIDTHB" = "9"
     Info (12134): Parameter "LPM_WIDTHP" = "18"
@@ -2260,20 +2262,21 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "abcdefgh[0]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/origi/Documents/Programming/sv/Fork-Dino-Game-FPGA-plusplus/src/output_files/vga.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1724 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1712 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 19 output pins
-    Info (21061): Implemented 1699 logic cells
+    Info (21061): Implemented 1687 logic cells
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1216 warnings
-    Info: Peak virtual memory: 5097 megabytes
-    Info: Processing ended: Fri Sep 26 18:48:25 2025
-    Info: Elapsed time: 00:06:45
-    Info: Total CPU time (on all processors): 00:07:04
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1217 warnings
+    Info: Peak virtual memory: 4854 megabytes
+    Info: Processing ended: Sat Sep 27 17:07:33 2025
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:52
 
 
 +------------------------------------------+
